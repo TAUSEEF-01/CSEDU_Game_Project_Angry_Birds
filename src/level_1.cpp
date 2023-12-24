@@ -241,6 +241,7 @@ void levelOne() // main function
     }
 
     // music button --> end
+    
 
     if (jump_1 && speed_x1)
     {
@@ -272,6 +273,8 @@ void levelOne() // main function
                 L1_Loading_Screen = true;
                 level_1_initialized = 0; // Level 1 will be initialized when opened again
                 green_1 = 1;
+
+                Mix_PlayMusic(music[GAME_OVER_MUSIC], 0); // Start playing music once
 
                 return;
             }
@@ -331,6 +334,8 @@ void levelOne() // main function
             {
                 toggleMusic(texture[MUTE_BUTTON], texture[UNMUTE_BUTTON], musicPlaying);
             }
+
+            Mix_PlayMusic(music[GAME_OVER_MUSIC], 0); // Start playing music once
 
             return;
         }

@@ -287,6 +287,8 @@ void levelTwo() // main function
                     toggleMusic2(texture[MUTE_BUTTON], texture[UNMUTE_BUTTON], musicPlaying);
                 }
 
+                Mix_PlayMusic(music[GAME_OVER_MUSIC], 0); // Start playing music once
+
                 return;
             }
 
@@ -345,6 +347,8 @@ void levelTwo() // main function
             {
                 toggleMusic2(texture[MUTE_BUTTON], texture[UNMUTE_BUTTON], musicPlaying);
             }
+
+            Mix_PlayMusic(music[GAME_OVER_MUSIC], 0); // Start playing music once
 
             return;
         }

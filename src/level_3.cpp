@@ -298,6 +298,8 @@ void levelThree() // main function
                     toggleMusic3(texture[MUTE_BUTTON], texture[UNMUTE_BUTTON], musicPlaying);
                 }
 
+                Mix_PlayMusic(music[GAME_WIN_MUSIC], 0); // Start playing music once
+
                 return;
             }
             else if (turns_left == 0) // if number of turns left is 0 before hitting the bird - GAME OVER
@@ -313,6 +315,8 @@ void levelThree() // main function
                 {
                     toggleMusic3(texture[MUTE_BUTTON], texture[UNMUTE_BUTTON], musicPlaying);
                 }
+
+                Mix_PlayMusic(music[GAME_OVER_MUSIC], 0); // Start playing music once
 
                 return;
             }
@@ -358,6 +362,8 @@ void levelThree() // main function
                 toggleMusic3(texture[MUTE_BUTTON], texture[UNMUTE_BUTTON], musicPlaying);
             }
 
+            Mix_PlayMusic(music[GAME_WIN_MUSIC], 0); // Start playing music once
+
             return;
         }
         else if (turns_left == 0) // if number of turns left is 0 before hitting the bird - GAME OVER
@@ -372,6 +378,8 @@ void levelThree() // main function
             {
                 toggleMusic3(texture[MUTE_BUTTON], texture[UNMUTE_BUTTON], musicPlaying);
             }
+
+            Mix_PlayMusic(music[GAME_OVER_MUSIC], 0); // Start playing music once
 
             return;
         }

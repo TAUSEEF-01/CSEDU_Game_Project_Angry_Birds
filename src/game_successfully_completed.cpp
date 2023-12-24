@@ -35,6 +35,8 @@ void gameWon()
             SDL_DestroyTexture(name_texture);
 
             back_button_music_gameWon();
+
+            Mix_HaltMusic();  // Stop music immediately
             return;
         }
     }
